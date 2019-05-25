@@ -14,7 +14,6 @@
 		759C12D222997476009713F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759C12D122997476009713F9 /* Assets.xcassets */; };
 		759C12D522997476009713F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759C12D322997476009713F9 /* LaunchScreen.storyboard */; };
 		759C12E022997476009713F9 /* Food_DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C12DF22997476009713F9 /* Food_DeliveryTests.swift */; };
-		759C12EB22997476009713F9 /* Food_DeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C12EA22997476009713F9 /* Food_DeliveryUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +46,6 @@
 		759C12DF22997476009713F9 /* Food_DeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_DeliveryTests.swift; sourceTree = "<group>"; };
 		759C12E122997476009713F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759C12E622997476009713F9 /* Food DeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food DeliveryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		759C12EA22997476009713F9 /* Food_DeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_DeliveryUITests.swift; sourceTree = "<group>"; };
-		759C12EC22997476009713F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +78,6 @@
 			children = (
 				759C12C622997473009713F9 /* Food Delivery */,
 				759C12DE22997476009713F9 /* Food DeliveryTests */,
-				759C12E922997476009713F9 /* Food DeliveryUITests */,
 				759C12C522997473009713F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,15 +114,6 @@
 				759C12E122997476009713F9 /* Info.plist */,
 			);
 			path = "Food DeliveryTests";
-			sourceTree = "<group>";
-		};
-		759C12E922997476009713F9 /* Food DeliveryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				759C12EA22997476009713F9 /* Food_DeliveryUITests.swift */,
-				759C12EC22997476009713F9 /* Info.plist */,
-			);
-			path = "Food DeliveryUITests";
 			sourceTree = "<group>";
 		};
 		759C12F822997481009713F9 /* Controller */ = {
@@ -301,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759C12EB22997476009713F9 /* Food_DeliveryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
