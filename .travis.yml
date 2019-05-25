@@ -1,5 +1,5 @@
 os: osx
 language: swift
 xcode_project: "Food Delivery/Food Delivery.xcodeproj"
-xcode_scheme: "Food DeliveryTests"
+xcode_scheme: "Food Delivery"
 xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
