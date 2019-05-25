@@ -22,11 +22,11 @@ class Food_DeliveryTests: XCTestCase {
     }
     
     func testExample() {
-        XCTAssert(false)
+        
     }
     
     func testPerformanceExample() {
-        XCTAssert(true)
+        
     }
     
 }
