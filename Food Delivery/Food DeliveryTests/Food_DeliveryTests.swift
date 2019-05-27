@@ -70,4 +70,44 @@ class Food_DeliveryTests: XCTestCase {
         XCTAssert(secondRecord.latitude() == firstRecord.latitude())
         XCTAssert(secondRecord.longitude() == firstRecord.longitude())
     }
+    
+    func testNaiveOptionTypeAndValueRecords() {
+        let optionName = "OptionName"
+        let optionValue1Name = "OptionValue1"
+        let optionValue2Name = "OptionValue2"
+        
+        let optionValue1CostDelta = 0.1
+        let optionValue2CostDelta = 0.2
+        
+        let createdOptionType = OptionTypeRecord(persistentContainer: persistentContainer, name: optionName)
+        XCTAssert(optionName == createdOptionType.name())
+        let fetchedOptionType = OptionTypeRecord(persistentContainer: persistentContainer, id: createdOptionType.id()!)
+        XCTAssert(fetchedOptionType.name() == createdOptionType.name())
+        
+        let createdOptionValue1 = OptionValueRecord(persistentContainer: persistentContainer, name: optionValue1Name, optionType: fetchedOptionType, costDelta: optionValue1CostDelta)
+        XCTAssert(optionValue1Name == createdOptionValue1.name())
+        XCTAssert(optionValue1CostDelta == createdOptionValue1.costDelta())
+        
+        let fetchedOptionValue1 = OptionValueRecord(persistentContainer: persistentContainer, id: createdOptionValue1.id()!)
+        XCTAssert(fetchedOptionValue1.name() == createdOptionValue1.name())
+        XCTAssert(fetchedOptionValue1.costDelta() == createdOptionValue1.costDelta())
+        
+        let createdOptionValue2 = OptionValueRecord(persistentContainer: persistentContainer, name: optionValue2Name, optionType: fetchedOptionType, costDelta: optionValue2CostDelta)
+        XCTAssert(optionValue2Name == createdOptionValue2.name())
+        XCTAssert(optionValue2CostDelta == createdOptionValue2.costDelta())
+        
+        let fetchedOptionValue2 = OptionValueRecord(persistentContainer: persistentContainer, id: createdOptionValue2.id()!)
+        XCTAssert(fetchedOptionValue2.name() == createdOptionValue2.name())
+        XCTAssert(fetchedOptionValue2.costDelta() == createdOptionValue2.costDelta())
+        
+        XCTAssert(fetchedOptionValue1.optionType(persistentContainer: persistentContainer)!.name () == optionName)
+        XCTAssert(fetchedOptionValue2.optionType(persistentContainer: persistentContainer)!.name () == optionName)
+        
+        let optionValues = fetchedOptionType.optionValues(persistentContainer: persistentContainer)
+        XCTAssert(optionValues[0].name() == fetchedOptionValue1.name())
+        XCTAssert(optionValues[0].costDelta() == fetchedOptionValue1.costDelta())
+        
+        XCTAssert(optionValues[1].name() == fetchedOptionValue2.name())
+        XCTAssert(optionValues[1].costDelta() == fetchedOptionValue2.costDelta())
+    }
 }
