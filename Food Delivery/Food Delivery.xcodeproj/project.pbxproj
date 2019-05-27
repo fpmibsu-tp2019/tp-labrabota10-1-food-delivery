@@ -15,6 +15,8 @@
 		759C12D522997476009713F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759C12D322997476009713F9 /* LaunchScreen.storyboard */; };
 		759C12E022997476009713F9 /* Food_DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C12DF22997476009713F9 /* Food_DeliveryTests.swift */; };
 		75CAFF39229C4CAA00C71BE3 /* RestaurantRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAFF38229C4CAA00C71BE3 /* RestaurantRecord.swift */; };
+		75CAFF3B229C5FF400C71BE3 /* OptionValueRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAFF3A229C5FF400C71BE3 /* OptionValueRecord.swift */; };
+		75CAFF3D229C601200C71BE3 /* OptionTypeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		759C12E122997476009713F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759C12E622997476009713F9 /* Food DeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food DeliveryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CAFF38229C4CAA00C71BE3 /* RestaurantRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRecord.swift; sourceTree = "<group>"; };
+		75CAFF3A229C5FF400C71BE3 /* OptionValueRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionValueRecord.swift; sourceTree = "<group>"; };
+		75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTypeRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				75CAFF38229C4CAA00C71BE3 /* RestaurantRecord.swift */,
+				75CAFF3A229C5FF400C71BE3 /* OptionValueRecord.swift */,
+				75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CAFF39229C4CAA00C71BE3 /* RestaurantRecord.swift in Sources */,
+				75CAFF3B229C5FF400C71BE3 /* OptionValueRecord.swift in Sources */,
 				759C12D022997473009713F9 /* Food_Delivery.xcdatamodeld in Sources */,
 				759C12CA22997473009713F9 /* ViewController.swift in Sources */,
 				759C12C822997473009713F9 /* AppDelegate.swift in Sources */,
+				75CAFF3D229C601200C71BE3 /* OptionTypeRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

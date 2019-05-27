@@ -43,6 +43,11 @@ class RestaurantRecord {
         try! managedContext.save()
     }
     
+    func delete(persistentContainer: NSPersistentContainer) {
+        persistentContainer.viewContext.delete(databaseObject!)
+        try! persistentContainer.viewContext.save()
+    }
+    
     func latitude() -> Double? {
         return databaseObject?.value(forKey: "latitude") as? Double
     }
