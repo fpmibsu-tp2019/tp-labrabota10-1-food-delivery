@@ -14,6 +14,7 @@
 		759C12D222997476009713F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759C12D122997476009713F9 /* Assets.xcassets */; };
 		759C12D522997476009713F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759C12D322997476009713F9 /* LaunchScreen.storyboard */; };
 		759C12E022997476009713F9 /* Food_DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C12DF22997476009713F9 /* Food_DeliveryTests.swift */; };
+		75CAFF39229C4CAA00C71BE3 /* RestaurantRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAFF38229C4CAA00C71BE3 /* RestaurantRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		759C12DF22997476009713F9 /* Food_DeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_DeliveryTests.swift; sourceTree = "<group>"; };
 		759C12E122997476009713F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759C12E622997476009713F9 /* Food DeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food DeliveryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CAFF38229C4CAA00C71BE3 /* RestaurantRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		759C12F922997488009713F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75CAFF38229C4CAA00C71BE3 /* RestaurantRecord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CAFF39229C4CAA00C71BE3 /* RestaurantRecord.swift in Sources */,
 				759C12D022997473009713F9 /* Food_Delivery.xcdatamodeld in Sources */,
 				759C12CA22997473009713F9 /* ViewController.swift in Sources */,
 				759C12C822997473009713F9 /* AppDelegate.swift in Sources */,
