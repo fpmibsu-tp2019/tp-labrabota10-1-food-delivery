@@ -35,7 +35,7 @@ class OptionTypeRecord {
         
         databaseObject = NSManagedObject(entity: entity, insertInto: managedContext)
         databaseObject!.setValue(count + 1, forKey: "option_type_id")
-        databaseObject!.setValue(name, forKey: "name")
+        databaseObject!.setValue(name, forKey: "option_name")
         
         try! managedContext.save()
     }
