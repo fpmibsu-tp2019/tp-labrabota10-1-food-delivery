@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		756C3A99229D476300381FE0 /* FoodTypeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C3A98229D476300381FE0 /* FoodTypeRecord.swift */; };
+		756C3A9B229D502600381FE0 /* OrderRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C3A9A229D502600381FE0 /* OrderRecord.swift */; };
 		759C12C822997473009713F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C12C722997473009713F9 /* AppDelegate.swift */; };
 		759C12CA22997473009713F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C12C922997473009713F9 /* ViewController.swift */; };
 		759C12CD22997473009713F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759C12CB22997473009713F9 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		756C3A98229D476300381FE0 /* FoodTypeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeRecord.swift; sourceTree = "<group>"; };
+		756C3A9A229D502600381FE0 /* OrderRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRecord.swift; sourceTree = "<group>"; };
 		759C12C422997473009713F9 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		759C12C722997473009713F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		759C12C922997473009713F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				75CAFF3A229C5FF400C71BE3 /* OptionValueRecord.swift */,
 				75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */,
 				756C3A98229D476300381FE0 /* FoodTypeRecord.swift */,
+				756C3A9A229D502600381FE0 /* OrderRecord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				759C12C822997473009713F9 /* AppDelegate.swift in Sources */,
 				756C3A99229D476300381FE0 /* FoodTypeRecord.swift in Sources */,
 				75CAFF3D229C601200C71BE3 /* OptionTypeRecord.swift in Sources */,
+				756C3A9B229D502600381FE0 /* OrderRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
