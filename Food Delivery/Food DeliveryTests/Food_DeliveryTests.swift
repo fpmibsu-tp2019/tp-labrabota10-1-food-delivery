@@ -139,4 +139,56 @@ class Food_DeliveryTests: XCTestCase {
         fetchedFoodType.removeOptionType(persistentContainer: persistentContainer, type: optionType)
         XCTAssert(fetchedFoodType.optionTypes(persistentContainer: persistentContainer).count == 0)
     }
+    
+    func testNaiveOrderRecord() {
+        let title = "Title"
+        let subtitle = "Subtitle"
+        let latitude = 12.3
+        let longitude = 45.6
+        
+        let restaurant = RestaurantRecord(persistentContainer: persistentContainer,
+                                          title: title, subtitle: subtitle,
+                                          latitude: latitude, longitude: longitude)
+        
+        let name = "FoodType"
+        let imageName = "FoodTypeImage"
+        let basicCost = 12.3
+        
+        let foodType = FoodTypeRecord(persistentContainer: persistentContainer, name: name,
+                                      imageName: imageName, basicCost: basicCost)
+        
+        let optionName = "OptionName"
+        let optionValueName = "OptionValue"
+        let optionValueCostDelta = 0.1
+        
+        let optionType = OptionTypeRecord(persistentContainer: persistentContainer, name: optionName)
+        let optionValue = OptionValueRecord(persistentContainer: persistentContainer, name: optionValueName,
+                                            optionType: optionType, costDelta: optionValueCostDelta)
+        
+        let paymentType: Int16 = 1
+        let createdOrder = OrderRecord(persistentContainer: persistentContainer, foodType: foodType, paymentType: paymentType, restaurant: restaurant)
+        
+        XCTAssert(createdOrder.accepted() == false)
+        XCTAssert(createdOrder.paymentType() == paymentType)
+        XCTAssert(createdOrder.restaurant(persistentContainer: persistentContainer)?.id() == restaurant.id())
+        XCTAssert(createdOrder.foodType(persistentContainer: persistentContainer)?.id() == foodType.id())
+        
+        let fetchedOrder = OrderRecord(persistentContainer: persistentContainer, id: createdOrder.id()!)
+        XCTAssert(fetchedOrder.accepted() == false)
+        XCTAssert(fetchedOrder.paymentType() == paymentType)
+        XCTAssert(fetchedOrder.restaurant(persistentContainer: persistentContainer)?.id() == restaurant.id())
+        XCTAssert(fetchedOrder.foodType(persistentContainer: persistentContainer)?.id() == foodType.id())
+        
+        fetchedOrder.accept(persistentContainer: persistentContainer)
+        XCTAssert(fetchedOrder.accepted() == true)
+        XCTAssert(fetchedOrder.options(persistentContainer: persistentContainer).count == 0)
+        
+        fetchedOrder.addOption(persistentContainer: persistentContainer, value: optionValue)
+        let options = fetchedOrder.options(persistentContainer: persistentContainer)
+        XCTAssert(options.count == 1)
+        XCTAssert(options[0].id() == optionValue.id())
+        
+        fetchedOrder.removeOption(persistentContainer: persistentContainer, value: optionValue)
+        XCTAssert(fetchedOrder.options(persistentContainer: persistentContainer).count == 0)
+    }
 }
