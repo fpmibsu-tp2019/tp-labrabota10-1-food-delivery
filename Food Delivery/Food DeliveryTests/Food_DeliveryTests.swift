@@ -110,4 +110,33 @@ class Food_DeliveryTests: XCTestCase {
         XCTAssert(optionValues[1].name() == fetchedOptionValue2.name())
         XCTAssert(optionValues[1].costDelta() == fetchedOptionValue2.costDelta())
     }
+    
+    func testNaiveFoodTypeRecord() {
+        let name = "FoodType"
+        let imageName = "FoodTypeImage"
+        let basicCost = 12.3
+        let optionName = "OptionName"
+        
+        let createdFoodType = FoodTypeRecord(persistentContainer: persistentContainer, name: name,
+                                            imageName: imageName, basicCost: basicCost)
+        XCTAssert(name == createdFoodType.name())
+        XCTAssert(imageName == createdFoodType.imageName())
+        XCTAssert(basicCost == createdFoodType.basicCost())
+        
+        let fetchedFoodType = FoodTypeRecord(persistentContainer: persistentContainer, id: createdFoodType.id()!)
+        XCTAssert(name == fetchedFoodType.name())
+        XCTAssert(imageName == fetchedFoodType.imageName())
+        XCTAssert(basicCost == fetchedFoodType.basicCost())
+        
+        let optionType = OptionTypeRecord(persistentContainer: persistentContainer, name: optionName)
+        XCTAssert(fetchedFoodType.optionTypes(persistentContainer: persistentContainer).count == 0)
+        
+        fetchedFoodType.addOptionType(persistentContainer: persistentContainer, type: optionType)
+        let optionTypes = fetchedFoodType.optionTypes(persistentContainer: persistentContainer)
+        XCTAssert(optionTypes.count == 1)
+        XCTAssert(optionTypes[0].name() == optionName)
+        
+        fetchedFoodType.removeOptionType(persistentContainer: persistentContainer, type: optionType)
+        XCTAssert(fetchedFoodType.optionTypes(persistentContainer: persistentContainer).count == 0)
+    }
 }
