@@ -12,7 +12,7 @@ import CoreData
 class FoodTypeRecord {
     private var databaseObject: NSManagedObject?
     
-    // Load actual restaurant record from database.
+    // Load actual record from database.
     init(persistentContainer: NSPersistentContainer, id: Int32) {
         let managedContext = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "FoodType")
@@ -26,7 +26,7 @@ class FoodTypeRecord {
         }
     }
     
-    // Create new restaurant record in database.
+    // Create new record in database.
     init(persistentContainer: NSPersistentContainer, name: String, imageName: String, basicCost: Double) {
         let managedContext = persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "FoodType", in: managedContext)!
