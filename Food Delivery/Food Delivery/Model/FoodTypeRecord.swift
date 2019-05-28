@@ -86,9 +86,9 @@ class FoodTypeRecord {
         let managedContext = persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "FoodTypeOptions", in: managedContext)!
         
-        databaseObject = NSManagedObject(entity: entity, insertInto: managedContext)
-        databaseObject!.setValue(id()!, forKey: "food_type_id")
-        databaseObject!.setValue(type.id()!, forKey: "option_id")
+        let connectionObject = NSManagedObject(entity: entity, insertInto: managedContext)
+        connectionObject.setValue(id()!, forKey: "food_type_id")
+        connectionObject.setValue(type.id()!, forKey: "option_id")
         
         try! managedContext.save()
     }
