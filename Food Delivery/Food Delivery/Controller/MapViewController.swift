@@ -56,7 +56,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        //self.performSegue(withIdentifier: "openDistrict", sender: view)
+        self.performSegue(withIdentifier: "showResult", sender: view)
     }
     
     override func didReceiveMemoryWarning() {

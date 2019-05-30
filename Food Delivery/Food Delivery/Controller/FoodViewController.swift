@@ -59,7 +59,7 @@ class FoodViewController : UICollectionViewController {
         }
     }*/
 }
-/*
+
 extension FoodViewController {
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         if selectedIndexPath == indexPath {
@@ -68,8 +68,8 @@ extension FoodViewController {
             selectedIndexPath = indexPath
         }
         
-        self.performSegue(withIdentifier: "showMoreInfo", sender: self)
+        self.performSegue(withIdentifier: "showOptions", sender: self)
         
         return false
     }
-}*/
+}
