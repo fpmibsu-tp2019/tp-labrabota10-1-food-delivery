@@ -158,7 +158,7 @@
 				75CAFF3A229C5FF400C71BE3 /* OptionValueRecord.swift */,
 				75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */,
 				756C3A98229D476300381FE0 /* FoodTypeRecord.swift */,
-				756C3A9A229D502600381FE0 /* OrderRecord.swift */
+				756C3A9A229D502600381FE0 /* OrderRecord.swift */,
 				32A6E01A22A027DA00F91C5C /* FoodViewCell.swift */,
 				32A6E01C22A0293000F91C5C /* FoodData.swift */,
 				32A6E01E22A029C500F91C5C /* Food.plist */,
