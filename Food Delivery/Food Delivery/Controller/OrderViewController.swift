@@ -37,6 +37,8 @@ class OrderViewController: UIViewController {
         print("\(quantity)")
         print("\(donenessText)")
         print("\(sauceText)")
+        
+        self.performSegue(withIdentifier: "showMap", sender: view)
     }
     
 }
