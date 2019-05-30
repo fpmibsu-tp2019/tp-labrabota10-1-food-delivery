@@ -9,9 +9,12 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    @IBOutlet weak var image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.image = UIImage(named: "Ray")
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
