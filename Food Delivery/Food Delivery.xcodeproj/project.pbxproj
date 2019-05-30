@@ -20,6 +20,8 @@
 		75CAFF3D229C601200C71BE3 /* OptionTypeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */; };
 		ED826B4322A019C2004D214C /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4222A019C2004D214C /* FoodViewController.swift */; };
 		ED826B4522A01BBE004D214C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4422A01BBE004D214C /* OrderViewController.swift */; };
+		ED826B4722A01C6B004D214C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4622A01C6B004D214C /* MapViewController.swift */; };
+		ED826B4922A01CC0004D214C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4822A01CC0004D214C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTypeRecord.swift; sourceTree = "<group>"; };
 		ED826B4222A019C2004D214C /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		ED826B4422A01BBE004D214C /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		ED826B4622A01C6B004D214C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ED826B4822A01CC0004D214C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			children = (
 				ED826B4222A019C2004D214C /* FoodViewController.swift */,
 				ED826B4422A01BBE004D214C /* OrderViewController.swift */,
+				ED826B4622A01C6B004D214C /* MapViewController.swift */,
+				ED826B4822A01CC0004D214C /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,12 +297,14 @@
 				75CAFF39229C4CAA00C71BE3 /* RestaurantRecord.swift in Sources */,
 				75CAFF3B229C5FF400C71BE3 /* OptionValueRecord.swift in Sources */,
 				759C12D022997473009713F9 /* Food_Delivery.xcdatamodeld in Sources */,
+				ED826B4722A01C6B004D214C /* MapViewController.swift in Sources */,
 				ED826B4322A019C2004D214C /* FoodViewController.swift in Sources */,
 				759C12C822997473009713F9 /* AppDelegate.swift in Sources */,
 				756C3A99229D476300381FE0 /* FoodTypeRecord.swift in Sources */,
 				75CAFF3D229C601200C71BE3 /* OptionTypeRecord.swift in Sources */,
 				756C3A9B229D502600381FE0 /* OrderRecord.swift in Sources */,
 				ED826B4522A01BBE004D214C /* OrderViewController.swift in Sources */,
+				ED826B4922A01CC0004D214C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
