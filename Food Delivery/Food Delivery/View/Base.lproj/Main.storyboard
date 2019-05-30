@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="-564" y="59"/>
         </scene>
-        <!--View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="21S-V0-DYl">
             <objects>
-                <viewController id="CpG-9s-2od" sceneMemberID="viewController">
+                <viewController id="CpG-9s-2od" customClass="OrderViewController" customModule="Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bOB-ng-Krc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
