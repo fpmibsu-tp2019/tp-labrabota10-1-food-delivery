@@ -22,6 +22,7 @@
 		ED826B4522A01BBE004D214C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4422A01BBE004D214C /* OrderViewController.swift */; };
 		ED826B4722A01C6B004D214C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4622A01C6B004D214C /* MapViewController.swift */; };
 		ED826B4922A01CC0004D214C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4822A01CC0004D214C /* ResultViewController.swift */; };
+		ED826B4B22A02C7F004D214C /* RestaurantAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED826B4A22A02C7F004D214C /* RestaurantAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		ED826B4422A01BBE004D214C /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		ED826B4622A01C6B004D214C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ED826B4822A01CC0004D214C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		ED826B4A22A02C7F004D214C /* RestaurantAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				75CAFF3C229C601200C71BE3 /* OptionTypeRecord.swift */,
 				756C3A98229D476300381FE0 /* FoodTypeRecord.swift */,
 				756C3A9A229D502600381FE0 /* OrderRecord.swift */,
+				ED826B4A22A02C7F004D214C /* RestaurantAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				759C12C822997473009713F9 /* AppDelegate.swift in Sources */,
 				756C3A99229D476300381FE0 /* FoodTypeRecord.swift in Sources */,
 				75CAFF3D229C601200C71BE3 /* OptionTypeRecord.swift in Sources */,
+				ED826B4B22A02C7F004D214C /* RestaurantAnnotation.swift in Sources */,
 				756C3A9B229D502600381FE0 /* OrderRecord.swift in Sources */,
 				ED826B4522A01BBE004D214C /* OrderViewController.swift in Sources */,
 				ED826B4922A01CC0004D214C /* ResultViewController.swift in Sources */,
