@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KK8-jf-xVk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8h9-RA-tCN">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,10 +56,13 @@
                             <outlet property="delegate" destination="8h9-RA-tCN" id="AOQ-Cd-7wX"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="CpG-9s-2od" kind="show" identifier="showOptions" id="yrd-hF-DYI"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTD-hd-L5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564.375" y="58.098591549295776"/>
+            <point key="canvasLocation" x="-684" y="31"/>
         </scene>
         <!--Order View Controller-->
         <scene sceneID="21S-V0-DYl">
@@ -138,6 +141,7 @@
                         <outlet property="donenessSegmentedControl" destination="is7-0i-C5B" id="eAh-yD-ifz"/>
                         <outlet property="quantityTextField" destination="Y4p-7Y-HdZ" id="P7J-a7-gPP"/>
                         <outlet property="sauceSegmentedControl" destination="weS-ef-XLf" id="gWv-8i-RSu"/>
+                        <segue destination="Srr-9L-ykA" kind="show" identifier="showMap" id="VSu-Le-9XI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNB-gp-y46" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,6 +166,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="tTS-6D-HCe" id="HBw-zJ-Ihd"/>
+                        <segue destination="KK8-jf-xVk" kind="show" identifier="showResult" id="hbY-92-jPW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFy-wh-WUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,6 +197,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="8h9-RA-tCN" kind="show" id="PeL-RI-5Vp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
